@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Spotify Widget</string>
+         <string name="add_comment">💬 Add Comment</string>
+        <string name="your_comment">Your comment:</string>
+        <string name="comment_hint">What do you think about this song?</string>
+        <string name="cancel">Cancel</string>
+        <string name="submit_comment">Add Comment</string>
+        <string name="rate_song">Rate this song (optional):</string>
+        <string name="add_emoji">Add emoji (optional):</string>
+        <string name="song_title">Song Title</string>
+        <string name="artist_name">Artist Name</string>
+        <string name="album_art_desc">Album artwork</string>
+ </resources>
