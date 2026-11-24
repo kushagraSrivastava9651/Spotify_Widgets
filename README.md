@@ -1,4 +1,4 @@
-<h1 align="center">🎵 Spotify Widget</h1>
+<h1 align="center">Spotify Widget</h1>
 
 <p align="center">A floating Android overlay that detects the song playing in Spotify and lets you save notes, star ratings and emoji reactions on it, stored locally with Room.</p>
 
@@ -9,15 +9,15 @@
   <img src="https://img.shields.io/badge/Room-Database-4285F4?style=flat-square" />
 </p>
 
-## ✨ Features
+## Features
 
 - **Song detection without the Spotify SDK**: a `NotificationListenerService` reads Spotify's media notification and gets the title, artist and album art.
 - **Floating widget**: a foreground `FloatingWidgetService` draws a bubble over other apps (`SYSTEM_ALERT_WINDOW`), so you can comment without leaving Spotify.
-- **Song journal**: tap the bubble to open a bottom sheet where you can write a note, give 1–5 stars and pick an emoji (😍 🔥 💖 …).
+- **Song journal**: tap the bubble to open a bottom sheet where you can write a note, give 1–5 stars and pick an emoji reaction.
 - **Offline-first**: comments are saved in a Room `song_comments` table through a repository and coroutines.
 - **Guided permissions**: Compose status cards show which permissions (overlay, notification access) are still missing and link to the right settings screen.
 
-## 🏗️ How It Works
+## How It Works
 
 ```
 Spotify notification ──▶ SpotifyNotificationListener ──▶ SongInfoManager (current song state)
@@ -36,7 +36,7 @@ Spotify notification ──▶ SpotifyNotificationListener ──▶ SongInfoMan
 | `ui/dialog/` | `CommentBottomSheetDialog` |
 | `utils/` | `PermissionHelper`, `SongInfoManager` |
 
-## 🚀 Getting Started
+## Getting Started
 
 1. Open the project in Android Studio and run it on a device (Spotify must be installed).
 2. In the app, grant **Display over other apps** and **Notification access**.
